@@ -77,28 +77,7 @@ public class NewsAdapter extends RecyclerView.Adapter {
 
         holder.secao_nome.setText(conteudo.getSecao().getNome().toUpperCase());
         holder.titulo.setText(String.valueOf(conteudo.getTitulo()));
-/*        holder.local.setText(conteudo.getLocal_do_evento());
-        holder.data.setText(formatDate.parseDate(conteudo.getData_evento()));
-        holder.horario.setText(formatDate.parseHora(conteudo.getHorario_evento()));
-        if (evento.getStatus() == StatusAgenda.CANCELADO.getStatus()) {
-            holder.status.setText("CANCELADO");
-//            holder.status.setTypeface(Typeface.DEFAULT_BOLD);
-            holder.status.setTextAppearance(mContext, R.style.TextStyleItemEventoBoldRed);
-        } else {
-            holder.status.setText("EFETUADO");
-//            holder.status.setTypeface(Typeface.DEFAULT);
-            holder.status.setTextAppearance(mContext, R.style.TextStyleItemEvento);
-        }
-        if (evento.getCodigo_agendamento_evento().equalsIgnoreCase("a5e923d3-2a8c-49aa-8083-001b22837216")) {
-            holder.nome.setText(evento.getNome_do_evento() + " < =========================");
-        }
-        if (evento.getData_evento().equalsIgnoreCase("29/05/2027 10:10")) {
-            holder.nome.setText(evento.getNome_do_evento() + " < =========================");
-        }*/
 
-//        holder.imagem.setImageResource(R.drawable.ic_ticket);
-
-        // String imgUrlPath = "http://189.87.62.105/ApiMeuSesi-Media/api/v1/media/DE6657F8-2628-497C-9427-7E21BC827D81";
         if (conteudo.getImagens().size() == 1) {
             String imgUrlPath = conteudo.getImagens().get(0).getUrl();
 //        Picasso.with().load(imgUrlPath).into(holder.imagem);
@@ -109,20 +88,10 @@ public class NewsAdapter extends RecyclerView.Adapter {
                     .into(holder.imagem);
         }
 
-//        int id = CustomContext.getContext().getResources().getIdentifier(evento.getImagem(),"drawable"
-//                ,CustomContext.getContext().getPackageName());
-//
-//        Glide.with(CustomContext.getContext())
-//                .load(id)
-//                .into(holder.imagem);
-
     }
     public class NewsViewHolder extends RecyclerView.ViewHolder {
         final TextView secao_nome;
         final TextView titulo;
-//        final TextView data;
-//        final TextView horario;
-//        final TextView status;
         final ImageView imagem;
 
 
@@ -130,9 +99,6 @@ public class NewsAdapter extends RecyclerView.Adapter {
             super(view);
             secao_nome = view.findViewById(R.id.secao_nome);
             titulo = view.findViewById(R.id.titulo);
-//            data = view.findViewById(R.id.evento_data);
-//            horario = view.findViewById(R.id.evento_horario);
-//            status = view.findViewById(R.id.evento_resultado_status);
             imagem = view.findViewById(R.id.imagem);
 
         }
