@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NewsListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/oglobo">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rl_materia_principal_capa"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imagem_capa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+
+            <TextView
+                android:id="@+id/secao_nome_capa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/imagem_capa"
+                android:layout_alignTop="@id/imagem_capa"
+                android:layout_alignRight="@id/imagem_capa"
+                android:layout_alignBottom="@id/imagem_capa"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="Seção nome capa"
+                android:paddingBottom="5dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/titulo_capa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/imagem_capa"
+                android:layout_alignTop="@id/imagem_capa"
+                android:layout_alignRight="@id/imagem_capa"
+                android:layout_alignBottom="@id/imagem_capa"
+                android:layout_marginBottom="45dp"
+                android:padding="7dp"
+                android:gravity="bottom"
+                android:text="Título nome capa"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+
+                ></android.support.v7.widget.RecyclerView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

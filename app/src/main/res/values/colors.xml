@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="preto">#000</color>
+    <color name="branco">#FFF</color>
+    <color name="cinzaBG">#eee</color>
+    <color name="colorAccent">#b1b6b9</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="vermelhoescuro">#d43f3a</color>
+    <color name="cinza">#d9d1d0</color>
+    <color name="verde">#629c44</color>
+    <color name="roxo">#6334e3</color>
+
+    <color name="azulescuro">#0000ff</color>
+    <color name="laranja">#ff8b17</color>
+    <color name="rosa">#ff4848</color>
+    <color name="cinzaescuro">#514d44</color>
+    <color name="cinzaclaro">#c5c6c1</color>
+
+    <color name="cinza_linha">#e5e5e5</color>
+    <color name="cinza_fundo">#f2f2f2</color>
+
+
+    <color name="list_divider">#979797</color>
+    <color name="list_item_selected_state">#F4F6F6</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+
+    <color name="bg_row_background">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+
+    <color name="table_header_text">#CCFFFFFF</color>
+    <color name="table_data_row_even">#11C5CAE9</color>
+    <color name="table_data_row_odd">#33C5CAE9</color>
+    <color name="primaryDark">#FF283593</color>
+    <color name="primary">#FF3F51B5</color>
+</resources>
